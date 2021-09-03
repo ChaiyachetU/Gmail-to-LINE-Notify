@@ -10,7 +10,7 @@ const bitlyToken = "Your Bitly Token";
 // priority contact list emails
 const priorityContactListEmails = [
   // test
-  "Your Priority Emails1", "Your Priority Emails2"
+  "Your Priority Email-1", "Your Priority Email-2"
 ];
 
 function main() {
@@ -200,49 +200,3 @@ function createShortUrl(longUrl, bitlyToken) {
     return;
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
