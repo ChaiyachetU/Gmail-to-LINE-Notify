@@ -128,7 +128,7 @@ function saveAttachmentFiles(attatchments, folderId) {
 
       const newAttachmentFile = todayFolder.createFile(attachment).setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
       const newAttchmentFileUrl = newAttachmentFile.getDownloadUrl();
-      const shortUrl = createShortUrl(newAttchmentFileUrl, );
+      const shortUrl = createShortUrl(newAttchmentFileUrl, bitlyToken);
 
       attatchmentUrls.push(shortUrl);
     })
