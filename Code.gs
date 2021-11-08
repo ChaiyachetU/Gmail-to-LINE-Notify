@@ -50,8 +50,8 @@ function getPriorityUnreadEmails() {
         // check sender is priority contact list
         const isPriorityContact = priorityContactListEmails.includes(sender);
 
-        // new inbox is my contact list emails
-        if (isPriorityContact) {
+        // new inbox is my contact list emails and unread
+        if (isPriorityContact && message.isUnread) {
           // sender
           Logger.log("New Inbox Email From My Contact List : " + sender);
           unreadEmailMessage += "\n\n📥New email from : " + sender;
